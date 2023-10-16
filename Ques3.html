@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    #formContainer{
+       display: flex;
+       flex-direction: column;
+       gap: 20px;
+       height: 800px;
+       justify-content: center;
+       align-items: center;
+    }
+    .form{
+        background-color: aqua;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        width: 10rem;
+        height: 10rem;
+        padding: 20px;
+        gap: 10px;
+    }
+
+    .form label{
+        font-weight: 600;
+    }
+
+    .form input{
+        background-color: black;
+        color: white;
+    }
+    .Opacity{
+        width: 300px;
+        background-color: aquamarine;
+        color: black;
+        padding: 30px;
+        border-radius: 10px;
+        
+    }
+    .opacityContainer{
+        display: flex;
+        flex-direction: column;
+    }
+    .conv1{
+        opacity: 0.5;
+    }
+    .conv2{
+        opacity: 1;
+    }
+    .conv3{
+        opacity: 0.2;
+    }
+</style>
+<body>
+    <div id="formContainer">
+        <section>
+            <form action="" class="form">
+                <label for="fName">First Name:</label>
+                <input type="text" id="fName">
+                <label for="lName">Last Name:</label>
+                <input type="text" id="lName">
+                <input type="submit" style="background-color: darkblue;">
+            </form>
+        </section>
+    <div class="opacityContainer">
+        <section class="Opacity">
+            The Opacity property in CSS sets the transparency of an element. The opacity value can be a number from 0.0 to 1.0, where 0.0 is completely transparent and 1.0 is completely opaque.
+        </section>
+        <h1>Example:</h1>
+        <p class="conv1">Hello</p>
+        <p class="conv2">How are you?</p>
+        <p class="conv3">I am Fine.</p>
+    </div>
+    </div>
+</body>
+</html>
